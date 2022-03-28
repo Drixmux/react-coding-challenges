@@ -16,7 +16,7 @@ function App() {
           </thead>
           <tbody>
             {records.map((record) => (
-              <tr>
+              <tr key={record.id}>
                 <td>{record.description}</td>
                 <td>{record.status}</td>
               </tr>
